@@ -1,0 +1,149 @@
+/* gloval */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  color: var(--white);
+  font-weight: 500;
+  line-height: 24px;
+  padding: 16px 32px 16px 32px;
+  background: var(--iris);
+  cursor: pointer;
+}
+
+.title {
+  color: var(--nanyBlue);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2%;
+  text-align: center;
+}
+
+.text {
+  color: var(--slate);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+}
+
+.subtitle {
+  color: var(--nanyBlue);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+/* root зміні */
+
+:root {
+  --nanyBlue: rgba(46, 47, 66, 1);
+  --ocen: rgba(64, 75, 191, 1);
+  --iris: rgba(77, 90, 229, 1);
+  --green: rgba(49, 208, 170, 1);
+  --slate: rgba(67, 68, 85, 1);
+  --lightSlate: rgba(142, 143, 153, 1);
+  --cornflower: rgba(231, 233, 252, 1);
+  --cloud: rgba(244, 244, 253, 1);
+  --nabyBlue-modal: rgba(46, 47, 66, 0.4);
+  --gray: rgba(46, 47, 66, 0.7);
+  --white: rgba(255, 255, 255, 1);
+  --dairy: rgba(252, 252, 252, 1);
+}
+
+/* header section */
+
+.logo {
+  font-family: "Raleway" sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  color: var(--nanyBlue);
+
+  span {
+    color: var(--iris);
+  }
+}
+
+.navbar__link {
+  color: var(--nanyBlue);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.contacts__link {
+  color: var(--slate);
+}
+
+/* hero section */
+
+.hero {
+  background-color: var(--nanyBlue);
+}
+
+.maintitle {
+  color: var(--white, rgba(255, 255, 255, 1));
+  font-family: Roboto;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+}
+
+/* features section */
+
+/* team section */
+
+.team {
+  background: var(--cloud);
+}
+
+.team__item {
+  background: var(--white);
+}
+
+.team__subtitle {
+  text-align: center;
+}
+
+.team__text {
+  text-align: center;
+}
+
+.team__photo {
+  width: 264px;
+  height: 260px;
+}
+
+/* portfolio section */
+
+.portfolio__image {
+  width: 360px;
+  height: 300px;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--nanyBlue);
+}
+
+.footer__logo {
+  color: var(--cloud);
+}
+
+.footer__text {
+  color: var(--cloud);
+}
