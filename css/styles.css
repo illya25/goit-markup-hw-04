@@ -121,6 +121,10 @@ a {
   background-color: var(--cloud);
 }
 
+.team li {
+  background-color: #fff;
+}
+
 .team__title {
   text-align: center;
   color: var(--navyBlue);
