@@ -65,6 +65,9 @@ a {
 /* --------------------- HEADER --------------------- */
 .header {
   border-bottom: 1px solid var(--cornflower);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header__container {
@@ -163,6 +166,9 @@ a {
 
 /* --------------------- HERO --------------------- */
 .hero {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -226,27 +232,17 @@ a {
   width: calc((100% - 72px) / 4);
 }
 
-.features__link {
+.features__icon-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: var(--navyBlue);
-  background-color: var(--cloud);
-  border: 1px solid var(--lightSlate);
-  border-radius: 4px;
-  min-width: 264px;
+
+  width: 264px;
   height: 112px;
   margin-bottom: 8px;
 
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.features__link:hover,
-.features__link:focus {
-  background-color: var(--iris);
-  fill: var(--white);
+  background-color: var(--cloud);
+  border-radius: 4px;
 }
 
 .features__list {
@@ -279,7 +275,6 @@ a {
 }
 
 .team__item {
-  background: var(--white);
   border-radius: 0 0 4px 4px;
   width: calc((100% - 72px) / 4);
 }
@@ -295,7 +290,7 @@ a {
 }
 
 .team li {
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .team__title {
@@ -319,7 +314,7 @@ a {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-top: 16px;
+  margin-top: 8px;
   padding: 0;
   list-style: none;
 }
@@ -342,7 +337,7 @@ a {
 
 .team__social-link:hover,
 .team__social-link:focus {
-  background-color: #31d0aa;
+  background-color: var(--ocean);
 }
 
 .team__social-icon {
@@ -366,7 +361,8 @@ a {
 .portfolio__wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio__item {
@@ -425,11 +421,12 @@ a {
 
 .footer__wrapper {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  gap: 120px;
 }
 
 .footer__social {
-  margin-left: 120px;
+  margin-left: 0;
 }
 
 .footer__logo {
@@ -447,4 +444,10 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud);
+}
+
+.footer__title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: var(--white);
 }
